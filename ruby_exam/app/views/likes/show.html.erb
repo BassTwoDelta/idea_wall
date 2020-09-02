@@ -3,7 +3,7 @@
         <p style="text-align: right;"><%= link_to "Bright Ideas", bright_ideas_path(), :method => :get %> | <%= link_to "Logout", destroy_session_path(current_user), :method => :delete %></p>
     </div>
     <div class="idea">
-        <p><a href="users/<%=@idea.user.id %>"><%= @idea.user.alias %></a> says:</p>
+        <p><a href="/users/<%=@idea.user.id %>"><%= @idea.user.alias %></a> says:</p>
         <p style= "border:1px solid black; width:75%; height:50px;"><%= @idea.content %></p>
     </div><br><br>
     <div class="people_who_liked">
